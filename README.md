@@ -1,7 +1,8 @@
 Instrukcja uruchomienia aplikacji CRUD na docker:
-1. W konsolli musimy przejść do folderu, w którym znajduje się projekt CRUD,a. następnie wkleić docker compose build --no-cache, a następnie kliknąć enter.
+1. W konsolli musimy przejść do folderu, w którym znajduje się projekt CRUD,a. następnie wkleić docker compose build, a następnie kliknąć enter.
 2. Nastepnie w konsoli należy wkleić docker compose up -d , a następnie kliknąć enter.
 3. Nazwe pliku .env.example zmienić na .env
+4. W konsoli wkleić: docker compose run --rm www composer install.
 5. W konsoli wkleić: docker compose run --rm www php artisan migrate
 6. W konsoli wkleić: docker compose run --rm www php artisan db:seed --class=BookSeeder
 7. W konsoli wkleić: docker compose run --rm www php artisan db:seed --class=AuthorSeeder
