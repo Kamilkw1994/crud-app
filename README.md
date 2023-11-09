@@ -14,3 +14,7 @@ Dlatego też istotne jest, by przed uruchomieniem testów aplikacji wykonać pun
 - http://localhost/books - Lista książek
 - http://localhost/authors - Lista autorów
 Oczywiście w widoku strony są utworzone hiperłącza umożliwiające przemieszczanie się pomiędzy wyżej wymienionymi modułami.
+
+9. UWAGA: Jeśli wystąpi błąd: 
+"The stream or file "/www/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied"
+Należy wykonać następujące instrukcje: chmod 777 storage/logs/laravel.log, a następnie sudo chmod 777 -R storage/framework
